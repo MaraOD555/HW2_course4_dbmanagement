@@ -4,3 +4,7 @@ ALTER TABLE student
     ADD CONSTRAINT unique_name UNIQUE (name),
     ALTER COLUMN age SET DEFAULT 20;
 
+ALTER TABLE faculty
+    ADD CONSTRAINT name_color_unique UNIQUE (name, color);
+
+
